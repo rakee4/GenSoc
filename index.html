@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feature Story Profile</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&amp;family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&amp;family=DM+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <style>
+    .fade-in { opacity: 0; transform: translateY(30px); animation: fadeUp 0.8s ease forwards; }
+    .fade-in-d1 { animation-delay: 0.1s; }
+    .fade-in-d2 { animation-delay: 0.25s; }
+    .fade-in-d3 { animation-delay: 0.4s; }
+    .fade-in-d4 { animation-delay: 0.55s; }
+    @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+    .divider-line { width: 60px; height: 3px; }
+    .quote-mark { font-size: 5rem; line-height: 1; opacity: 0.15; font-family: 'Playfair Display', serif; }
+    .section-number { font-size: 6rem; font-weight: 900; opacity: 0.07; line-height: 1; position: absolute; top: -20px; left: -10px; font-family: 'Playfair Display', serif; }
+    .story-section { position: relative; }
+    .hero-pattern {
+      background-image: radial-gradient(circle at 20% 50%, rgba(0,0,0,0.03) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(0,0,0,0.02) 0%, transparent 40%);
+    .banner {
+    width: 100%;
+    height: 320px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 🔥 makes it look like your design */
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Optional overlay for better readability */
+.banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.25);
+}
+    }
+  </style>
+  <style>body { box-sizing: border-box; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full">
+  <div id="app-wrapper" class="w-full h-full overflow-auto" style="background-color: #FAF7F2; color: #2C2C2C;"><!-- Introduction -->
+   <header class="hero-pattern w-full" style="padding: 8% 6% 6%;">
+    <div class="max-w-3xl mx-auto fade-in">
+     <div class="divider-line mb-6" id="divider1" style="background-color: #B8860B;"></div>
+     <p class="uppercase tracking-[0.3em] text-xs mb-4 font-medium" style="font-family: 'DM Sans', sans-serif; color: #8A7A6B;">Feature Story: Patricia Jarabelo</p>
+     <h1 id="hero-name" class="leading-none mb-4" style="font-family: 'Playfair Display', serif; font-size: 3.5rem; font-weight: 900; color: #2C2C2C;">Daughter’s Journey: Parents’ Love </h1>
+
+     
+     
+     
+     <div class="w-full rounded-2xl overflow-hidden mb-8" style="height: 700px; background: linear-gradient(135deg, #D4C5A9 0%, #B8A88A 40%, #8A7A6B 100%); display: flex; align-items: center; justify-content: center;">
+      <div style="text-align: center;"><i data-lucide="user" style="width: 80px; height: 80px; color: #FAF7F2; opacity: 0.5;"></i>
+       <img src="image/patty.jpg" class="profile-img">
+      </div>
+     </div>
+     <p id="intro-text" style="font-family: 'Source Serif 4', serif; font-size: 1.15rem; line-height: 1.9; color: #2C2C2C;">The purpose of Patricia's story is to shed light on the emotional dynamics of coming out within a conservative and religious family setting. Rather than focusing on external discrimination, her journey highlights how deeply held traditional religious beliefs and binary gender norms can impact family relationships. Which ultimately, serves as a reminder of parents’ unconditional love, showing that empathy and open communication can bridge the gap between long-standing traditions.</p>
+    </div>
+   </header><!-- Nut Graph -->
+   <section class="w-full fade-in fade-in-d1" style="padding: 5% 6%;">
+    <div class="max-w-3xl mx-auto">
+     <div class="rounded-xl p-8 md:p-10 relative" id="nutgraph-card" style="background-color: #2C2C2C;"><span class="quote-mark absolute top-4 left-6" style="color: #B8860B;">"</span>
+      <h2 id="nutgraph-heading" class="mb-4 relative z-10" style="font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: #FAF7F2;">Why This Story Matters</h2>
+      <p id="nutgraph-text" class="relative z-10" style="font-family: 'Source Serif 4', serif; font-size: 1.1rem; line-height: 1.85; color: #D4C5A9;">We often celebrate the courage it takes for an individual to come out. But today, we are looking at the other side of the table: the parents. Patricia’s parents were raised in a world of traditional religious values. When their daughter’s identity is not in alignment with their views, they are faced with a choice. We explore the quiet, heroic resilience of parents who chose to do what is against beliefs' by embracing a love that is truly unconditional even when it went against the very faith they were raised with.</p>
+     </div>
+    </div>
+    <br><br>
+    <div class="w-full rounded-2xl overflow-hidden mb-8" style="height: 500px; background: linear-gradient(135deg, #D4C5A9 0%, #B8A88A 40%, #8A7A6B 100%); display: flex; align-items: center; justify-content: center;">
+      <div style="text-align: center;">
+       <img src="image/family.jpg" class="profile-img">
+      </div>
+     </div>
+   </section><!-- Growing Up -->
+   <section class="w-full story-section fade-in fade-in-d2" style="padding: 5% 6%;">
+    <div class="max-w-3xl mx-auto relative"><span class="section-number" style="color: #2C2C2C;">01</span>
+     <div class="pl-2 md:pl-6">
+      <div class="divider-line mb-4" id="divider2" style="background-color: #B8860B;"></div>
+      <h3 id="section1-title" class="mb-5" style="font-family: 'Playfair Display', serif; font-size: 1.75rem; font-weight: 700; color: #2C2C2C;">Growing Up</h3>
+      <p id="section1-text" style="font-family: 'Source Serif 4', serif; font-size: 1.08rem; line-height: 1.9; color: #4A4A4A;">
+        Patricia grew up in a community where she did not experience the same level of discrimination often highlighted in mainstream LGBTQ+ narratives. 
+        She recalls having supportive and understanding friends who treated her with respect and kindness. 
+        <br><br>
+This highlights the common assumption LGBTQ+ individuals don't experience constant discrimination. 
+Thus shedding light on the struggle between personal identity and traditional religious expectations within the family. 
+It helps us understand the emotional difficulty of balancing respect for family values with the need for self-expression also emphasizing parents' unconditional
+love for their child. Despite differences in beliefs and perspectives. 
+Patty’s parents ultimately yielded to show that their love for her could not be easily broken, parental love persists even during conflict and 
+that families can gradually move toward understanding while still maintaining deep emotional bonds.
+</p>
+     </div>
+    </div>
+   </section><!-- GROWING UP -->
+   <section class="w-full story-section fade-in fade-in-d2" style="padding: 3% 6% 5%;">
+    <div class="max-w-3xl mx-auto relative"><span class="section-number" style="color: #2C2C2C;">02</span>
+     <div class="pl-2 md:pl-6">
+      <div class="divider-line mb-4" id="divider3" style="background-color: #B8860B;"></div>
+      <h3 id="section2-title" class="mb-5" style="font-family: 'Playfair Display', serif; font-size: 1.75rem; font-weight: 700; color: #2C2C2C;">The Struggle
+</h3>
+      <p id="section2-text" style="font-family: 'Source Serif 4', serif; font-size: 1.08rem; line-height: 1.9; color: #4A4A4A;">
+        Despite having supportive friends, Patty’s greatest challenge came from within her own household. 
+        Her parents strongly practiced religious teachings and upheld traditional beliefs about gender and family roles. 
+        This created emotional tension as Patty tried to remain honest about her identity while also respecting her parents’ deeply held faith. 
+        Even when their views differed, she remained firm in her belief that she stood firm to live in happiness.
+<br><br>
+The struggle between personal identity and traditional religious expectations within the family 
+helps us understand the emotional difficulty of balancing respect for family values with the need for self-expression.
+</p>
+     </div>
+    </div>
+   </section><!-- THE STRUGGLE -->
+   <section class="w-full story-section fade-in fade-in-d3" style="padding: 3% 6% 5%;">
+    <div class="max-w-3xl mx-auto relative"><span class="section-number" style="color: #2C2C2C;">03</span>
+     <div class="pl-2 md:pl-6">
+      <div class="divider-line mb-4" id="divider4" style="background-color: #B8860B;"></div>
+      <h3 id="section3-title" class="mb-5" style="font-family: 'Playfair Display', serif; font-size: 1.75rem; font-weight: 700; color: #2C2C2C;">Bitter Sweet
+</h3>
+      <p id="section3-text" style="font-family: 'Source Serif 4', serif; font-size: 1.08rem; line-height: 1.9; color: #4A4A4A;">
+        Knowing that her parents’ reactions were rooted in their deeply held beliefs and concern for her wellbeing. 
+        The journey toward acceptance was not easy, ultimately her parents showed that their love for their child was stronger than their disagreements. 
+        Yielding to a bittersweet experience, painful at times, but also meaningful because it revealed that true parental love does not 
+        abandon a child simply because of differences in identity.
+    <br><br>
+      Despite differences in beliefs and perspectives, Patty’s parents ultimately showed that their love for her could not be easily broken. 
+      Parental love can persist even during conflict, and that families can gradually move toward understanding while 
+      still maintaining deep emotional bonds.
+    </p>
+      
+     </div>
+    </div>
+   </section><!-- Ending / Reflection -->
+   <section class="w-full fade-in fade-in-d4" style="padding: 4% 6% 8%;">
+    <div class="max-w-3xl mx-auto">
+     <div class="text-center mb-8">
+      <div class="divider-line mx-auto mb-6" id="divider5" style="background-color: #B8860B;"></div>
+      <h2 id="ending-heading" style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700; color: #2C2C2C;">Conclusion or Reflection</h2>
+     </div>
+     <p id="ending-text" class="mb-10" style="font-family: 'Source Serif 4', serif; font-size: 1.1rem; line-height: 1.9; color: #4A4A4A; text-align: center;">
+        Patricia’s journey reminds us that the experience of coming out is not always defined by public discrimination, but often by deeply personal moments
+         within the family. 
+         <br><br>
+Ultimately, Patricia’s journey teaches us that acceptance within families may not happen instantly, but it can grow through patience, empathy, and open communication. Her story reminds us that when love is placed above differences, families can become a source of strength where individuals are able to live authentically while maintaining meaningful relationships.</p>
+     <div class="rounded-xl p-8 text-center" id="quote-card" style="background-color: #2C2C2C;"><span class="quote-mark" style="color: #B8860B;">"</span>
+      <p id="closing-quote" class="italic -mt-6" style="font-family: 'Playfair Display', serif; font-size: 1.35rem; line-height: 1.7; color: #FAF7F2;">Traditions and beliefs may shape our views, but a parent’s love has the power to go beyond them.</p>
+     </div>
+    </div>
+    <br><br>
+    <div class="w-full rounded-2xl overflow-hidden mb-8" style="height: 170px; display: flex; align-items: center; justify-content: center;">
+      <div style="text-align: center;"><i data-lucide="user" style="width: 80px; height: 80px; color: #FAF7F2; opacity: 0.5;"></i>
+       <img src="image/logo.jpeg" class="profile-img">
+      </div>
+     </div>
+   </section><!-- Footer -->
+   <footer class="w-full text-center" style="padding: 3% 6% 4%; border-top: 1px solid #E0D8CC;">
+    <p class="text-xs tracking-[0.2em] uppercase" style="font-family: 'DM Sans', sans-serif; color: #8A7A6B;"><i data-lucide="pen-tool" style="width: 14px; height: 14px; display: inline-block; vertical-align: middle; margin-right: 6px;"></i> <strong>A Feature Story<br> &#169; Patricia Jarabelo</strong>
+    </p>
+   </footer>
+  </div>
+  <script>
+    const defaultConfig = {
+      background_color: "#FAF7F2",
+      card_color: "#2C2C2C",
+      text_color: "#2C2C2C",
+      accent_color: "#B8860B",
+      muted_color: "#8A7A6B",
+      font_family: "Playfair Display",
+      font_size: 16,
+      person_name: "Elena Marquez",
+      person_tagline: "Architect of forgotten spaces, dreamer of livable worlds",
+      intro_text: "The first time Elena Marquez walked into the crumbling textile mill on the outskirts of her hometown, she was twelve years old and utterly captivated. While others saw ruin, she saw possibility — the skeleton of something beautiful waiting to breathe again. That moment would quietly define the next two decades of her life, leading her from a small coastal town to the forefront of adaptive architecture.",
+      nutgraph_heading: "Why This Story Matters",
+      nutgraph_text: "This is the story of how one person's refusal to accept decay as destiny is reshaping how cities think about their abandoned spaces. Elena's work isn't just about buildings — it's about identity, memory, and the radical idea that what we discard says more about us than what we build new. In an era of demolish-and-replace, her philosophy challenges us to look closer before we look away.",
+      section1_title: "The Roots of Reinvention",
+      section1_text: "Growing up in a port town that had seen better days, Elena learned early that buildings carry stories the way people carry scars — visibly, if you know where to look. Her grandmother's house sat beside a shuttered cannery, and through its broken windows Elena would imagine the workers, the noise, the life that once filled those halls. She studied architecture not to build glass towers, but to listen to what old walls had to say. Her thesis project — converting a decommissioned ferry terminal into a community arts center — won national attention and set the tone for everything that followed.",
+      section2_title: "Breaking Through the Walls",
+      section2_text: "Success didn't come without resistance. Developers called her idealistic. City planners questioned the economics. For three years, Elena's firm survived on small residential projects while she spent evenings drafting proposals no one had asked for — reimagining abandoned schools, factories, and warehouses as affordable housing, markets, and public libraries. The turning point came when a flooding crisis forced one city to rethink its waterfront infrastructure. Elena's unsolicited proposal for converting a derelict grain elevator into flood-resilient housing was suddenly the only plan that made sense. The project was completed in eighteen months and won two international design awards.",
+      section3_title: "Building a Legacy, One Ruin at a Time",
+      section3_text: "Today, Elena leads a studio of thirty architects and designers who share her conviction that preservation and innovation are not opposites. Her team has transformed over forty structures across twelve cities — each project guided by deep research into the building's history and the community's needs. She teaches a graduate seminar called \"Listening to Walls\" and has become an advocate for policy changes that incentivize adaptive reuse over demolition. But ask her about legacy, and she'll redirect the conversation to the people who live in her buildings. \"I don't build monuments,\" she says. \"I build second chances.\"",
+      ending_heading: "Still Listening",
+      ending_text: "As Elena walks through her latest project — a former railroad depot now home to a community health clinic and rooftop garden — she pauses by a load-bearing column still marked with the handprints of workers from 1932. She won't cover them. \"These marks remind us that someone was here before us,\" she says quietly. \"And someone will be here after.\" In a world that too often mistakes newness for progress, Elena Marquez is proof that the most powerful thing we can build is continuity.",
+      closing_quote: "Every building has a story. My job is to make sure it gets a second chapter."
+    };
+
+    async function onConfigChange(config) {
+      const c = key => config[key] || defaultConfig[key];
+      const baseFont = c('font_family');
+      const baseSize = c('font_size');
+      const headingStack = `${baseFont}, 'Playfair Display', serif`;
+      const bodyStack = `'Source Serif 4', serif`;
+
+      // Colors
+      document.getElementById('app-wrapper').style.backgroundColor = c('background_color');
+      document.getElementById('app-wrapper').style.color = c('text_color');
+
+      document.getElementById('nutgraph-card').style.backgroundColor = c('card_color');
+      document.getElementById('quote-card').style.backgroundColor = c('card_color');
+
+      // Accent dividers
+      ['divider1','divider2','divider3','divider4','divider5'].forEach(id => {
+        document.getElementById(id).style.backgroundColor = c('accent_color');
+      });
+
+      // Accent quote marks
+      document.querySelectorAll('.quote-mark').forEach(el => el.style.color = c('accent_color'));
+
+      // Muted text
+      document.getElementById('hero-tagline').style.color = c('muted_color');
+
+      // Section numbers
+      document.querySelectorAll('.section-number').forEach(el => el.style.color = c('text_color'));
+
+      // Text content
+      document.getElementById('hero-name').textContent = c('person_name');
+      document.getElementById('hero-tagline').textContent = c('person_tagline');
+      document.getElementById('intro-text').textContent = c('intro_text');
+      document.getElementById('nutgraph-heading').textContent = c('nutgraph_heading');
+      document.getElementById('nutgraph-text').textContent = c('nutgraph_text');
+      document.getElementById('section1-title').textContent = c('section1_title');
+      document.getElementById('section1-text').textContent = c('section1_text');
+      document.getElementById('section2-title').textContent = c('section2_title');
+      document.getElementById('section2-text').textContent = c('section2_text');
+      document.getElementById('section3-title').textContent = c('section3_title');
+      document.getElementById('section3-text').textContent = c('section3_text');
+      document.getElementById('ending-heading').textContent = c('ending_heading');
+      document.getElementById('ending-text').textContent = c('ending_text');
+      document.getElementById('closing-quote').textContent = c('closing_quote');
+
+      // Heading font
+      document.getElementById('hero-name').style.fontFamily = headingStack;
+      document.getElementById('hero-name').style.fontSize = `${baseSize * 2.2}px`;
+      document.getElementById('nutgraph-heading').style.fontFamily = headingStack;
+      document.getElementById('nutgraph-heading').style.fontSize = `${baseSize * 1.6}px`;
+      document.getElementById('section1-title').style.fontFamily = headingStack;
+      document.getElementById('section1-title').style.fontSize = `${baseSize * 1.5}px`;
+      document.getElementById('section2-title').style.fontFamily = headingStack;
+      document.getElementById('section2-title').style.fontSize = `${baseSize * 1.5}px`;
+      document.getElementById('section3-title').style.fontFamily = headingStack;
+      document.getElementById('section3-title').style.fontSize = `${baseSize * 1.5}px`;
+      document.getElementById('ending-heading').style.fontFamily = headingStack;
+      document.getElementById('ending-heading').style.fontSize = `${baseSize * 1.75}px`;
+      document.getElementById('closing-quote').style.fontFamily = headingStack;
+      document.getElementById('closing-quote').style.fontSize = `${baseSize * 1.35}px`;
+
+      // Body font sizes
+      document.getElementById('hero-tagline').style.fontSize = `${baseSize * 1.2}px`;
+      document.getElementById('intro-text').style.fontSize = `${baseSize * 1.08}px`;
+      document.getElementById('nutgraph-text').style.fontSize = `${baseSize * 1.05}px`;
+      document.getElementById('section1-text').style.fontSize = `${baseSize * 1.05}px`;
+      document.getElementById('section2-text').style.fontSize = `${baseSize * 1.05}px`;
+      document.getElementById('section3-text').style.fontSize = `${baseSize * 1.05}px`;
+      document.getElementById('ending-text').style.fontSize = `${baseSize * 1.05}px`;
+
+      // Card text colors
+      document.getElementById('nutgraph-heading').style.color = c('background_color');
+      document.getElementById('closing-quote').style.color = c('background_color');
+    }
+
+    function makeMutable(key) {
+      return {
+        get: () => window.elementSdk.config[key] || defaultConfig[key],
+        set: (value) => {
+          window.elementSdk.config[key] = value;
+          window.elementSdk.setConfig({ [key]: value });
+        }
+      };
+    }
+
+    window.elementSdk.init({
+      defaultConfig,
+      onConfigChange,
+      mapToCapabilities: (config) => ({
+        recolorables: [
+          makeMutable('background_color'),
+          makeMutable('card_color'),
+          makeMutable('text_color'),
+          makeMutable('accent_color'),
+          makeMutable('muted_color')
+        ],
+        borderables: [],
+        fontEditable: makeMutable('font_family'),
+        fontSizeable: makeMutable('font_size')
+      }),
+      mapToEditPanelValues: (config) => {
+        const c = key => config[key] || defaultConfig[key];
+        return new Map([
+          ["person_name", c("person_name")],
+          ["person_tagline", c("person_tagline")],
+          ["intro_text", c("intro_text")],
+          ["nutgraph_heading", c("nutgraph_heading")],
+          ["nutgraph_text", c("nutgraph_text")],
+          ["section1_title", c("section1_title")],
+          ["section1_text", c("section1_text")],
+          ["section2_title", c("section2_title")],
+          ["section2_text", c("section2_text")],
+          ["section3_title", c("section3_title")],
+          ["section3_text", c("section3_text")],
+          ["ending_heading", c("ending_heading")],
+          ["ending_text", c("ending_text")],
+          ["closing_quote", c("closing_quote")]
+        ]);
+      }
+    });
+
+    lucide.createIcons();
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9e05ba1b442b0655',t:'MTc3NDE4ODA3Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
